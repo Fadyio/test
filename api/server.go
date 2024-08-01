@@ -22,7 +22,7 @@ func handleHelloworld(writer http.ResponseWriter, requst *http.Request) {
 	if requst.Method != "GET" {
 		http.Error(writer, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
 	}
-	writeResponse(writer, "hello fady")
+	writeResponse(writer, "hello world")
 }
 func handleHealth(writer http.ResponseWriter, requst *http.Request) {
 	if requst.Method != "GET" {
